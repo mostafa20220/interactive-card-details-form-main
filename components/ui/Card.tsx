@@ -6,17 +6,18 @@ export default function Card() {
   return (
     <>
       <Box
-        width={["70%", "90%"]}
-        height={["55%", "33%"]}
+        width={["70%", ,"90%"]}
+        maxWidth={[250, ,"100%"]}
+        height={["55%", ,"33%"]}
         sx={{
           position: "absolute",
-          top: { xs: "50%", sm: "65%" },
-          left: { xs: "60%", sm: "100%" },
+          top: { xs: "50%", md: "65%" },
+          left: { xs: "60%", md: "100%" },
           translate: "-50% -50%",
           backgroundImage: `url('/images/bg-card-back.png') `,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          borderRadius: ["0.5rem", "1rem"],
+          borderRadius: ["0.5rem",, "1rem"],
         }}
         zIndex={100}
       >
@@ -24,10 +25,10 @@ export default function Card() {
           sx={{
             color: "white",
             position: "absolute",
-            top: "51%" ,
-            left: { xs: "83%", sm: "85%" },
+            top: "51%",
+            left: { xs: "83%", md: "85%" },
             transform: "translate(-50%, -50%)",
-            fontSize: ["0.5rem", "1rem"],
+            fontSize: ["0.5rem", ,"1rem"],
           }}
         >
           000
@@ -35,25 +36,26 @@ export default function Card() {
       </Box>
 
       <Box
-        width={["70%", "90%"]}
-        height={["55%", "32%"]}
+        width={["70%", ,"90%"]}
+        height={["55%", ,"32%"]}
+        maxWidth={[250, ,"100%"]}
         sx={{
           position: "absolute",
-          translate: { xs: "-50% 0%", sm: "-70% 0%" },
-          top: ["54%", "13%"],
-          left: ["45%", "100%"],
+          translate: { xs: "-50% 0%", md: "-70% 0%" },
+          top: ["54%", ,"13%"],
+          left: ["45%", ,"100%"],
 
           backgroundImage: `url('/images/bg-card-front.png')`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          borderRadius: ["0.5rem", "1rem"],
+          borderRadius: ["0.5rem", ,"1rem"],
         }}
         zIndex={100}
       >
         <Grid
           container
           direction={"column"}
-          sx={{ width: "100%", height: "100%", p: [2, 4] }}
+          sx={{ width: "100%", height: "100%", p: [2,, 4] }}
         >
           <Image
             unoptimized
@@ -61,13 +63,13 @@ export default function Card() {
             alt="card-logo"
             width={50}
             height={15}
-            className="sm:w-[100px] sm:h-[50px]"
+            className=" lg:w-[100px] lg:h-[50px]"
           />
           <Grid container direction={"column"} gap={1.5} mt={"auto"}>
             <Typography
               sx={{
                 color: "white",
-                fontSize: ["90%", "1.5rem"],
+                fontSize: ["90%", ,"1.5rem"],
                 letterSpacing: "0.08rem",
                 wordSpacing: "0.15rem",
               }}
@@ -82,7 +84,7 @@ export default function Card() {
               <Typography
                 sx={{
                   color: "white",
-                  fontSize: ["0.5rem", "1rem"],
+                  fontSize: ["0.5rem", ,"1rem"],
                   letterSpacing: "0.05rem",
                 }}
               >
@@ -91,7 +93,7 @@ export default function Card() {
               <Typography
                 sx={{
                   color: "white",
-                  fontSize: ["0.5rem", "1rem"],
+                  fontSize: ["0.5rem", ,"1rem"],
                 }}
               >
                 00/00

@@ -4,9 +4,9 @@ import { Grid } from "@mui/material";
 
 export default function Home() {
   return (
-    <Grid container height={"100vh"} direction={{ xs: "column", sm: "row" }}>
-        <CardView />
-        <CardForm />
+    <Grid container height={"100vh"} direction={{ xs: "column", md: "row" }}>
+      <CardView />
+      <CardForm />
     </Grid>
   );
 }
